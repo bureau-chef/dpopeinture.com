@@ -21,7 +21,7 @@ class Index extends Component {
     return (
     <div className="app">
       <Head>
-        <title>DPO Peinture Inc.ss</title>
+        <title>DPO Peinture Inc. - Votre projet, notre expertise.</title>
         <link rel="icon" href="/favicon.ico" />
       </Head>
 
@@ -32,7 +32,7 @@ class Index extends Component {
     </div>
     )
   }
-  
+
 }
 
 export default Index
