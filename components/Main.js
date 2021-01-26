@@ -211,7 +211,7 @@ function Main(props) {
 
                     {imageContent.img.map((IMG, index) => (
                         <Fragment>
-                            <Col sm={12} md={2} className='img-thumbnail' >
+                            <Col sm={6} md={2} className='img-thumbnail' >
                                 <Image
                                     src={IMG.src}
                                     alt={IMG.alt}
