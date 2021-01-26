@@ -69,6 +69,25 @@ h1 {
     margin: auto;
 }
 
+.circle {
+    height: 45vh;
+    width: 45vh;
+    background-color: $colorLightBlue;
+    border-radius: 50%;
+    display: inline-block;
+    position: absolute;
+}
+
+.circle.top {
+    top: calc(22.5vh - 35vh);
+    left: calc(22.5vh - 55vh);
+}
+
+.circle.bottom {
+    right: calc(22.5vh - 35vh);
+    bottom: calc(22.5vh - 55vh);
+}
+
 hr.spacer {
     display: block;
     width: 100%;;
@@ -78,14 +97,22 @@ hr.spacer {
 
 
 header {
+    position: relative;
+    z-index: 1;
     width: 100%;
     background-color: $colorWhite;
 }
 
 main {
+    position: relative;
     width: 100%;
     background-color: $colorBlue;
     color: $colorWhite;
+    overflow: hidden;
+
+    > .wrapper {
+        margin: 1rem auto;
+    }
 }
 
 footer {
@@ -111,9 +138,18 @@ footer.section {
     background-color: $colorWhite;
     border-radius: .5rem;
     color: $colorBlue;
-    padding: 1rem 1.5rem;
+    padding: 1rem 2rem;
+    margin: 1rem 0;
 }
 
-::marker {
-    display: none;
+.img-thumbnail {
+    padding: .5rem;
+
+    img {
+        display: block;
+    }
+}
+
+.mosaic {
+    margin: 0 -.5rem;
 }
