@@ -183,6 +183,23 @@ footer.section {
     visibility: hidden;
 }
 
+.close {
+    position: fixed;
+    top: 1rem;
+    right: 1rem;
+    color: #FFFFFF;
+    font-size: 2rem;
+    z-index: 101;
+    visibility: hidden;
+    a {
+        font-family: $fontBold;
+        padding: 1rem;
+    }
+    :hover {
+        cursor: pointer;
+    }
+}
+
 .img-big {
     width: auto;
     max-width: 70%;
@@ -196,4 +213,5 @@ footer.section {
 }
 .slick-dots li button:before {
     color: white!important;
+    font-size: 12px;
 }
