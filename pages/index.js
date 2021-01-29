@@ -8,7 +8,7 @@ export default function Home() {
         <link rel="icon" href="/favicon.ico" />
       </Head> 
 
-      <main>
+      <div id="Main" className="container">
         <h1 className="title">
           DPO Peinture Inc.
         </h1>
@@ -17,7 +17,7 @@ export default function Home() {
           Bientôt disponible
         </p>
 
-      </main>
+      </div>
 
       <style jsx>{`
         .container {
