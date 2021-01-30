@@ -59,14 +59,14 @@ function Footer(props) {
             <div className="wrapper">
                 <Row center="xs" start="sm" middle="xs">
                     <Col sm={12} md={6}>
-                        <div>
+                        <span>
                             <Image
                                 src='/regie-du-batiment-du-quebec-rbq-vector-logo.svg'
                                 alt='Régie du bâtiment du Québec'
                                 width={150}
                                 height={65}
                             />
-                        </div>
+                        </span>
                     </Col>
                     <Col sm={12} md={6}>
                         <p>

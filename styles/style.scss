@@ -113,6 +113,22 @@ header {
     > .wrapper {
         margin: 1rem auto;
     }
+
+    a {
+        color: $colorWhite;
+    }
+
+    a:hover {
+        text-decoration: none;
+    }
+
+    .icon-phone,
+    .icon-email {
+        padding-right: .5rem;
+        bottom: -.35rem;
+        position: relative;
+    }
+    
 }
 
 footer {
@@ -145,7 +161,8 @@ footer.section {
 .img-thumbnail {
     padding: .5rem;
     display: flex;
-    transition: all 2.25s ease-in-out;
+    opacity: 0;
+    /* transition: all 2.25s ease-in-out; */
 
     img {
         display: block;
@@ -207,6 +224,7 @@ footer.section {
     max-height: 90%;
     margin: auto;
     text-align: center;
+    opacity: 0;
 }
 .slick-dots li.slick-active button:before {
     color: white!important;
@@ -215,3 +233,28 @@ footer.section {
     color: white!important;
     font-size: 12px;
 }
+
+.loading-container {
+    position: absolute;
+}
+
+.loading {
+    height: 30px;
+    width: 30px;
+    border: 1px solid #2586c826;
+    border-right-color: #2586c8;
+    border-radius: 50%;
+    -webkit-animation: rotate 1s infinite linear;
+    position: relative;
+    top: -50%;
+    left: calc(50% - 15px);
+    z-index: 1000000;
+  }
+  
+  @-webkit-keyframes rotate {
+    /* 100% keyframe for  clockwise. 
+       use 0% instead for anticlockwise */
+    100% {
+      -webkit-transform: rotate(360deg);
+    }
+  }

@@ -188,10 +188,6 @@ class Main extends Component {
         
         
         
-        const handleLoad = () => {
-            console.log("Loaded")
-            /* setLoaded(true) */
-        }
         const openSlider = () => {
             gsap.to('.backdrop, #slider, .close', {
                 autoAlpha: 1,
@@ -258,7 +254,7 @@ class Main extends Component {
                                 <h2>
                                     Heures d’ouverture
                                 </h2>
-                                <p>
+                                <p style={{lineHeight: '1.7rem'}}>
                                     Lundi au vendredi de 7h à 18h<br />
                                     Samedi de 8h à 12h
                                 </p>
@@ -267,9 +263,29 @@ class Main extends Component {
                                 <h2>
                                     Pour nous joindre
                                 </h2>
-                                <p>
-                                    <span className='icon-phone'></span>(514) 686-7117<br />
-                                    <span className='icon-email'></span>dpopeinture@gmail.com
+                                <p style={{lineHeight: '1.7rem'}}>
+                                    <a href='tel:514-686-7117'>
+                                        <span className='icon-phone'>
+                                            <Image
+                                                src='/phone.svg'
+                                                alt='(514) 686-7117'
+                                                width={18}
+                                                height={18}
+                                            />
+                                        </span>
+                                        (514) 686-7117
+                                    </a><br />
+                                    <a href="mailto:dpopeinture@gmail.com?subject=Demande d'information">
+                                        <span className='icon-email'>
+                                            <Image
+                                                src='/email.svg'
+                                                alt='dpopeinture@gmail.com'
+                                                width={18}
+                                                height={18}
+                                            />
+                                        </span>
+                                        dpopeinture@gmail.com
+                                    </a>
                                 </p>
                             </Col>
                         </Row>
@@ -300,16 +316,28 @@ class Main extends Component {
 
                     {imageContent.img.map((IMG, index2) => (
                         <Fragment>
-                            <Col sm={6} md={2} className='img-thumbnail' onClick={e => {
+                                
+                            <Col sm={6} md={2} onClick={e => {
                                     this.slider.slickGoTo(index2)
                                     openSlider()
                                 }} >
+                                    {/* <div className="loading-container"><div className="loading"></div> */}
+                                    <div className={`img-thumbnail img-thumbnail-${index2}`}>
                                 <Image
                                     src={IMG.src}
                                     alt={IMG.alt}
                                     width={IMG.w}
                                     height={IMG.h}
+                                    onLoad={() => {
+                                        gsap.to(`.img-thumbnail-${index2}`, {
+                                            autoAlpha: 1,
+                                            ease:Power3.easeInOut,
+                                            duration: 1
+                                        })
+                                    }}
                                 />
+                                </div>
+                                {/* </div> */}
                             </Col>
                     </Fragment>
                     )
@@ -327,15 +355,21 @@ class Main extends Component {
                     {imageContent.img.map((IMG, index) => (
                         <Fragment>
                                     
-                            <div className='img-big'>
+                            <div className={`img-big img-big-${index}`}>
                                 
                                     <Image
-                                            src={IMG.big}
-                                            alt={IMG.alt}
-                                            width={IMG.bigw}
-                                            height={IMG.bigh}
-                                            /* onLoad={handleLoad} */
-                                        />
+                                        src={IMG.big}
+                                        alt={IMG.alt}
+                                        width={IMG.bigw}
+                                        height={IMG.bigh}
+                                        onLoad={() => {
+                                            gsap.to(`.img-big-${index}`, {
+                                                autoAlpha: 1,
+                                                ease:Power3.easeInOut,
+                                                duration: 1
+                                            })
+                                        }}
+                                    />
                                         
                             </div>
                         </Fragment>
