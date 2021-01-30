@@ -309,6 +309,7 @@ class Main extends Component {
                                 <li>Service de design d’intérieur</li>
                             </ul>
                         </div>
+                            <hr className="spacer" />
                     </Col>
                 </Row>
 
@@ -323,6 +324,7 @@ class Main extends Component {
                                 }} >
                                     {/* <div className="loading-container"><div className="loading"></div> */}
                                     <div className={`img-thumbnail img-thumbnail-${index2}`}>
+                                        <div className="img-background">
                                 <Image
                                     src={IMG.src}
                                     alt={IMG.alt}
@@ -335,7 +337,7 @@ class Main extends Component {
                                             duration: 1
                                         })
                                     }}
-                                />
+                                /></div>
                                 </div>
                                 {/* </div> */}
                             </Col>
