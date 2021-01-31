@@ -26,12 +26,19 @@ function Footer(props) {
     } */
     
     useEffect(() => {
-        /* gsap.from('#Footer', {
+        gsap.from('#Footer', {
+            scrollTrigger: {
+                trigger: '#Footer',
+                start: 'top bottom-=50px',
+                /* scrub: true, */
+                /* markers: true, */
+                toggleActions: "play none none none"
+            },
             autoAlpha: 0,
             ease:Power3.easeInOut,
             duration: 1.5
         })
-        gsap.from('#Home-title', {
+        /* gsap.from('#Home-title', {
             autoAlpha: 0,
             ease:Power3.easeInOut,
             delay:.65,

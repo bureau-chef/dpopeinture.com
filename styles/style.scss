@@ -132,6 +132,11 @@ header {
         bottom: -.35rem;
         position: relative;
     }
+
+    #col-content-1, 
+    #col-content-2 {
+        opacity: 0;
+    }
     
 }
 
@@ -153,6 +158,8 @@ footer.section {
 .section {
     padding: 3rem 1.5rem;
 }
+
+
 
 .card {
     background-color: $colorWhite;

@@ -4,11 +4,11 @@ import Image from 'next/image'
 import { Row, Col } from 'react-flexbox-grid/dist/react-flexbox-grid'
 
 import { gsap, Power3 } from 'gsap/dist/gsap'
-/* import { ScrollTrigger } from 'gsap/dist/ScrollTrigger' */
+import { ScrollTrigger } from 'gsap/dist/ScrollTrigger'
 
 import Slider from 'react-slick'
 
-/* gsap.registerPlugin(ScrollTrigger) */
+gsap.registerPlugin(ScrollTrigger)
 
 
 class Main extends Component {
@@ -17,9 +17,50 @@ class Main extends Component {
       super(props)
     }
   
-    /* componentDidMount() {
-      TagManager.initialize({ gtmId: 'GTM-TMSSCZL' })
-    } */
+    componentDidMount() {
+        gsap.from('#Main', { 
+            scrollTrigger: {
+                trigger: '#Main',
+                start: 'top bottom-=50px',
+                /* scrub: true, */
+                /* markers: true, */
+                toggleActions: "play none none none"
+            },
+            autoAlpha: 0,
+            ease:Power3.easeOut,
+            duration: 1.5,
+            onComplete: () => {
+                gsap.to('#col-content-1', { 
+                    scrollTrigger: {
+                        trigger: '#col-content-1',
+                        start: 'top bottom-=50px',
+                        /* scrub: true, */
+                        /* markers: true, */
+                        toggleActions: "play none none none"
+                    },
+                    autoAlpha: 1,
+                    ease:Power3.easeOut,
+                    duration: 1,
+                    /* onStart: pushRouter('/service/') */
+                })
+                gsap.to('#col-content-2', { 
+                    scrollTrigger: {
+                        trigger: '#col-content-2',
+                        start: 'top bottom-=50px',
+                        /* scrub: true, */
+                        /* markers: true, */
+                        toggleActions: "play none none none"
+                    },
+                    autoAlpha: 1,
+                    ease:Power3.easeOut,
+                    duration: 1,
+                    /* onStart: pushRouter('/service/') */
+                })
+            },
+            /* onStart: pushRouter('/service/') */
+        })
+        
+    }
   
     render () {
 
@@ -220,8 +261,9 @@ class Main extends Component {
             /* setLoaded(true) */
         }
             
-        /* useEffect(() => {
-            gsap.from('#Header', {
+        /* useEffect(() => { */
+            
+            /* gsap.from('#Header', {
                 autoAlpha: 0,
                 ease:Power3.easeInOut,
                 duration: 1
@@ -231,8 +273,8 @@ class Main extends Component {
                 ease:Power3.easeInOut,
                 delay:.75,
                 duration: .75
-            })
-        }, []) */
+            }) */
+        /* }, []) */
 
       return (
         <main>
@@ -244,7 +286,7 @@ class Main extends Component {
 
             <div className="wrapper">
                 <Row middle="xs">
-                    <Col sm={12} md={7}>
+                    <Col id='col-content-1' sm={12} md={7}>
                         <Row>
                             <h1>
                                 Entrepreneur peintre
@@ -309,7 +351,7 @@ class Main extends Component {
                         </Row>
                         
                     </Col>
-                    <Col sm={12} md={4} smOffset={1}>
+                    <Col id='col-content-2' sm={12} md={4} smOffset={1}>
                         <div className='card'>
                             <h2>
                                 Services offerts
@@ -365,7 +407,7 @@ class Main extends Component {
             </div>
         </div>
 
-        <div className="backdrop" onClick={e => closeSlider() }></div>
+        <div className="backdrop" /* onClick={e => closeSlider() } */></div>
         <div className="close" onClick={e => closeSlider() }><a onClick={e => closeSlider() }>X</a></div>
         <Row id='slider' middle="xs">
             <Col xs={12}>
