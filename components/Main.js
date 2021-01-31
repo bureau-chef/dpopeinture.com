@@ -33,6 +33,7 @@ class Main extends Component {
                     'h': 2048,
                     'bigw': 2048,
                     'bigh': 2048,
+                    'orientation': 'h',
                 },
                 {
                     'src': '/photos/A733804F-69EC-4E7F-A75A-4E9AE79CB6BB.JPEG',
@@ -42,6 +43,7 @@ class Main extends Component {
                     'h': 2048,
                     'bigw': 2048,
                     'bigh': 2048,
+                    'orientation': 'h',
                 },
                 {
                     'src': '/photos/IMG_5784-c.jpg',
@@ -51,6 +53,7 @@ class Main extends Component {
                     'h': 716,
                     'bigw': 716,
                     'bigh': 960,
+                    'orientation': 'v',
                 },
                 {
                     'src': '/photos/IMG_5772.JPG',
@@ -60,6 +63,7 @@ class Main extends Component {
                     'h': 1200,
                     'bigw': 1200,
                     'bigh': 1200,
+                    'orientation': 'h',
                 },
                 {
                     'src': '/photos/IMG_5783.JPEG',
@@ -69,6 +73,7 @@ class Main extends Component {
                     'h': 2048,
                     'bigw': 2048,
                     'bigh': 2048,
+                    'orientation': 'h',
                 },
                 {
                     'src': '/photos/131EBC52-B061-45D1-BA01-AB0AFCEEF7BB.JPEG',
@@ -78,6 +83,7 @@ class Main extends Component {
                     'h': 2048,
                     'bigw': 2048,
                     'bigh': 2048,
+                    'orientation': 'h',
                 },
                 {
                     'src': '/photos/IMG_5779.JPEG',
@@ -87,6 +93,7 @@ class Main extends Component {
                     'h': 2048,
                     'bigw': 2048,
                     'bigh': 2048,
+                    'orientation': 'h',
                 },
                 {
                     'src': '/photos/EE6EB1FA-61A6-4C14-BA32-A99DC7D94D05.JPEG',
@@ -96,6 +103,7 @@ class Main extends Component {
                     'h': 2048,
                     'bigw': 2048,
                     'bigh': 2048,
+                    'orientation': 'h',
                 },
                 {
                     'src': '/photos/IMG_5773.JPG',
@@ -105,6 +113,7 @@ class Main extends Component {
                     'h': 2048,
                     'bigw': 2048,
                     'bigh': 2048,
+                    'orientation': 'h',
                 },
                 {
                     'src': '/photos/16F85998-9ADF-450D-A735-2010446F9E2E.JPEG',
@@ -114,6 +123,7 @@ class Main extends Component {
                     'h': 2048,
                     'bigw': 2048,
                     'bigh': 2048,
+                    'orientation': 'h',
                 },
                 {
                     'src': '/photos/IMG_5774.JPEG',
@@ -123,6 +133,7 @@ class Main extends Component {
                     'h': 2048,
                     'bigw': 2048,
                     'bigh': 2048,
+                    'orientation': 'h',
                 },
                 {
                     'src': '/photos/IMG_5780-c.jpg',
@@ -132,6 +143,7 @@ class Main extends Component {
                     'h': 1536,
                     'bigw': 2048,
                     'bigh': 1536,
+                    'orientation': 'h',
                 },
                 {
                     'src': '/photos/IMG_5775.JPEG',
@@ -141,6 +153,7 @@ class Main extends Component {
                     'h': 2048,
                     'bigw': 2048,
                     'bigh': 2048,
+                    'orientation': 'h',
                 },
                 {
                     'src': '/photos/8ECEE6A5-F70C-41FC-AFED-D07125FA9512.JPEG',
@@ -150,6 +163,7 @@ class Main extends Component {
                     'h': 2048,
                     'bigw': 2048,
                     'bigh': 2048,
+                    'orientation': 'h',
                 },
                 {
                     'src': '/photos/IMG_5679.JPEG',
@@ -159,6 +173,7 @@ class Main extends Component {
                     'h': 2048,
                     'bigw': 2048,
                     'bigh': 2048,
+                    'orientation': 'h',
                 }
             ]
         }
@@ -319,25 +334,26 @@ class Main extends Component {
                         <Fragment>
                                 
                             <Col sm={6} md={2} onClick={e => {
-                                    this.slider.slickGoTo(index2)
-                                    openSlider()
-                                }} >
-                                    {/* <div className="loading-container"><div className="loading"></div> */}
-                                    <div className={`img-thumbnail img-thumbnail-${index2}`}>
-                                        <div className="img-background">
-                                <Image
-                                    src={IMG.src}
-                                    alt={IMG.alt}
-                                    width={IMG.w}
-                                    height={IMG.h}
-                                    onLoad={() => {
-                                        gsap.to(`.img-thumbnail-${index2}`, {
-                                            autoAlpha: 1,
-                                            ease:Power3.easeInOut,
-                                            duration: 1
-                                        })
-                                    }}
-                                /></div>
+                                this.slider.slickGoTo(index2)
+                                openSlider()
+                            }} >
+                                {/* <div className="loading-container"><div className="loading"></div> */}
+                                <div className={`img-thumbnail img-thumbnail-${index2} orientation-${IMG.orientation}`}>
+                                    <div className="img-background">
+                                        <Image
+                                            src={IMG.src}
+                                            alt={IMG.alt}
+                                            width={IMG.w}
+                                            height={IMG.h}
+                                            onLoad={() => {
+                                                gsap.to(`.img-thumbnail-${index2}`, {
+                                                    autoAlpha: 1,
+                                                    ease:Power3.easeInOut,
+                                                    duration: 1
+                                                })
+                                            }}
+                                        />
+                                    </div>
                                 </div>
                                 {/* </div> */}
                             </Col>
@@ -357,7 +373,7 @@ class Main extends Component {
                     {imageContent.img.map((IMG, index) => (
                         <Fragment>
                                     
-                            <div className={`img-big img-big-${index}`}>
+                            <div className={`img-big img-big-${index} orientation-${IMG.orientation}`} style={{maxWidth:`calc(.${IMG.bigw} * 90vh)`, maxHeight:`calc(.${IMG.bigh} * 90vh)`}}>
                                 
                                     <Image
                                         src={IMG.big}
