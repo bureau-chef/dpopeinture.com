@@ -7,6 +7,8 @@ import Header from '../components/Header'
 import Main from '../components/Main'
 import Footer from '../components/Footer'
 
+import { gsap, Power3 } from 'gsap/dist/gsap'
+
 class Index extends Component {
 
   constructor(props) { 
@@ -15,6 +17,11 @@ class Index extends Component {
 
   componentDidMount() {
     TagManager.initialize({ gtmId: 'GTM-TMSSCZL' })
+    gsap.from('.app', { 
+      autoAlpha: 0,
+      ease:Power3.easeOut,
+      duration: 1,
+    })
   }
 
   render () {
