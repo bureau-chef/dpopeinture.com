@@ -28,7 +28,7 @@ class Main extends Component {
             },
             autoAlpha: 0,
             ease:Power3.easeOut,
-            duration: 1.5,
+            duration: 1.15,
             onComplete: () => {
                 gsap.to('#col-content-1', { 
                     scrollTrigger: {
@@ -387,11 +387,33 @@ class Main extends Component {
                                             alt={IMG.alt}
                                             width={IMG.w}
                                             height={IMG.h}
+                                            className="img-fade"
                                             onLoad={() => {
-                                                gsap.to(`.img-thumbnail-${index2}`, {
+                                                gsap.to(`.img-thumbnail-${index2} .img-fade`, {
                                                     autoAlpha: 1,
                                                     ease:Power3.easeInOut,
-                                                    duration: 1
+                                                    duration: 1,
+                                                    onComplete: () => {
+                                                        gsap.to(`.img-thumbnail-${index2} .img-background`, {
+                                                            backgroundColor: '#2586c700',
+                                                            duration: 0
+                                                        })
+                                                    }
+                                                })
+                                                
+                                            }}
+                                            onMouseOver={() => {
+                                                gsap.to(`.img-thumbnail-${index2} .img-fade`, {
+                                                    alpha: .5,
+                                                    ease:Power3.easeOut,
+                                                    duration: .25
+                                                })
+                                            }}
+                                            onMouseLeave={() => {
+                                                gsap.to(`.img-thumbnail-${index2} .img-fade`, {
+                                                    alpha: 1,
+                                                    /* ease:Power3.easeIn, */
+                                                    duration: .15
                                                 })
                                             }}
                                         />
