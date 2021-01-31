@@ -17,8 +17,8 @@ class Index extends Component {
 
   componentDidMount() {
     TagManager.initialize({ gtmId: 'GTM-TMSSCZL' })
-    gsap.from('.app', { 
-      autoAlpha: 0,
+    gsap.to('.app', { 
+      autoAlpha: 1,
       ease:Power3.easeOut,
       duration: 1,
     })
