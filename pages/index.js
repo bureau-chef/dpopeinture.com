@@ -28,10 +28,27 @@ class Index extends Component {
     return (
     <div className="app">
       <Head>
+        {/* <!-- Primary Meta Tags --> */}
         <title>DPO Peinture Inc. - Votre projet, notre expertise.</title>
-        <link rel="icon" href="/favicon.ico" />
+        <meta name="title" content="DPO Peinture Inc. - Votre projet, notre expertise." />
+        <meta name="description" content="Entrepreneur peintre œuvrant principalement sur la rive-sud et la région de Montréal, DPO Peinture Inc. est disponible pour tous vos projets de peinture, petits ou grands. Que ce soit pour l’intérieur ou l’extérieur, notre équipe chevronnée saura satisfaire vos attentes, aussi élevées soient-elles. Faites confiance à nos experts, ils mettront leurs compétences et leur minutie en œuvre pour réaliser les travaux demandés tout en respectant vos exigences. Contactez-nous dès maintenant et il nous fera grand plaisir de discuter avec vous de votre projet." />
         <meta name="keywords" content="DPO Peinture Inc., Entrepreneur peintre, Peinture résidentielle, Peinture commerciale, Peinture d'armoires de cuisine, Peinture de revêtements extérieurs, Peinture au fusil, Teinture en tout genre, Service de design d’intérieur" />
-        <meta name="description" content='Entrepreneur peintre œuvrant principalement sur la rive-sud et la région de Montréal, DPO Peinture Inc. est disponible pour tous vos projets de peinture, petits ou grands. Que ce soit pour l’intérieur ou l’extérieur, notre équipe chevronnée saura satisfaire vos attentes, aussi élevées soient-elles. Faites confiance à nos experts, ils mettront leurs compétences et leur minutie en œuvre pour réaliser les travaux demandés tout en respectant vos exigences. Contactez-nous dès maintenant et il nous fera grand plaisir de discuter avec vous de votre projet.' />
+
+        {/* <!-- Open Graph / Facebook --> */}
+        <meta property="og:type" content="website" />
+        <meta property="og:url" content="https://www.dpopeinture.com/" />
+        <meta property="og:title" content="DPO Peinture Inc. - Votre projet, notre expertise." />
+        <meta property="og:description" content="Entrepreneur peintre œuvrant principalement sur la rive-sud et la région de Montréal, DPO Peinture Inc. est disponible pour tous vos projets de peinture, petits ou grands. Que ce soit pour l’intérieur ou l’extérieur, notre équipe chevronnée saura satisfaire vos attentes, aussi élevées soient-elles. Faites confiance à nos experts, ils mettront leurs compétences et leur minutie en œuvre pour réaliser les travaux demandés tout en respectant vos exigences. Contactez-nous dès maintenant et il nous fera grand plaisir de discuter avec vous de votre projet." />
+        <meta property="og:image" content="/DPO-Peinture-Couleur-SQUARE.png" />
+
+        {/* <!-- Twitter --> */}
+        <meta property="twitter:card" content="summary_large_image" />
+        <meta property="twitter:url" content="https://www.dpopeinture.com/" />
+        <meta property="twitter:title" content="DPO Peinture Inc. - Votre projet, notre expertise." />
+        <meta property="twitter:description" content="Entrepreneur peintre œuvrant principalement sur la rive-sud et la région de Montréal, DPO Peinture Inc. est disponible pour tous vos projets de peinture, petits ou grands. Que ce soit pour l’intérieur ou l’extérieur, notre équipe chevronnée saura satisfaire vos attentes, aussi élevées soient-elles. Faites confiance à nos experts, ils mettront leurs compétences et leur minutie en œuvre pour réaliser les travaux demandés tout en respectant vos exigences. Contactez-nous dès maintenant et il nous fera grand plaisir de discuter avec vous de votre projet." />
+        <meta property="twitter:image" content="/DPO-Peinture-Couleur-SQUARE.png" />
+        
+        <link rel="icon" href="/favicon.ico" />
       </Head>
 
       <Header />
