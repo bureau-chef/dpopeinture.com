@@ -28,9 +28,9 @@ function Header(props) {
     return (
         <header id="Header">
 
-            <Parallax strength={500}>
+            <Parallax strength={500} style={{height: '50vh', minHeight:'375px'}}>
                 
-                <Row center='xs' middle='xs' style={{height: '50vh'}}>
+                <Row center='xs' middle='xs' style={{height: '50vh', minHeight:'375px'}}>
                     <Col xs={12}>
                         <div id="Logo">
                             <Image
@@ -48,6 +48,7 @@ function Header(props) {
                         width: '100vw',
                         maxWidth: '100%',
                         height: '50vh', 
+                        minHeight:'375px',
                         backgroundImage: 'url("/DPO-Peinture-Inc-Background.jpg")', 
                         backgroundPosition: 'center',
                         backgroundSize: 'cover',
