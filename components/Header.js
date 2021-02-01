@@ -50,7 +50,7 @@ function Header(props) {
                         height: '50vh', 
                         minHeight:'375px',
                         backgroundImage: 'url("/DPO-Peinture-Inc-Background.jpg")', 
-                        backgroundPosition: 'center',
+                        backgroundPosition: 'center top',
                         backgroundSize: 'cover',
                         opacity: '.5',
                     }}>
