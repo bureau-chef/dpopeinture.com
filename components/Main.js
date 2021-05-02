@@ -67,11 +67,41 @@ class Main extends Component {
         const imageContent = {
             img : [
                 {
+                    'src': '/photos/IMG_7758.JPG',
+                    'big': '/photos/IMG_7758.JPG',
+                    'alt': "DPO Peinture Inc. - Peinture d'armoires de cuisine - Avant/Après",
+                    'w': 600,
+                    'h': 600,
+                    'bigw': 2048,
+                    'bigh': 2048,
+                    'orientation': 'h',
+                },
+                {
+                    'src': '/photos/IMG_7759.JPG',
+                    'big': '/photos/IMG_7759.JPG',
+                    'alt': "DPO Peinture Inc. - Peinture d'armoires de cuisine - Avant/Après",
+                    'w': 600,
+                    'h': 600,
+                    'bigw': 2048,
+                    'bigh': 2048,
+                    'orientation': 'h',
+                },
+                {
+                    'src': '/photos/IMG_7760.JPG',
+                    'big': '/photos/IMG_7760.JPG',
+                    'alt': "DPO Peinture Inc. - Peinture d'armoires de cuisine - Avant/Après",
+                    'w': 600,
+                    'h': 600,
+                    'bigw': 2048,
+                    'bigh': 2048,
+                    'orientation': 'h',
+                },
+                {
                     'src': '/photos/IMG_5776.JPEG',
                     'big': '/photos/IMG_5776.JPEG',
                     'alt': 'DPO Peinture Inc. - Teinture - Escalier',
-                    'w': 2048,
-                    'h': 2048,
+                    'w': 600,
+                    'h': 600,
                     'bigw': 2048,
                     'bigh': 2048,
                     'orientation': 'h',
@@ -80,8 +110,8 @@ class Main extends Component {
                     'src': '/photos/A733804F-69EC-4E7F-A75A-4E9AE79CB6BB.JPEG',
                     'big': '/photos/A733804F-69EC-4E7F-A75A-4E9AE79CB6BB.JPEG',
                     'alt': 'DPO Peinture Inc. - Teinture - Patio - Extérieur',
-                    'w': 2048,
-                    'h': 2048,
+                    'w': 600,
+                    'h': 600,
                     'bigw': 2048,
                     'bigh': 2048,
                     'orientation': 'h',
@@ -90,8 +120,8 @@ class Main extends Component {
                     'src': '/photos/IMG_5784-c.jpg',
                     'big': '/photos/IMG_5784.JPEG',
                     'alt': 'DPO Peinture Inc. - Teinture - Patio - Extérieur',
-                    'w': 716,
-                    'h': 716,
+                    'w': 600,
+                    'h': 600,
                     'bigw': 716,
                     'bigh': 960,
                     'orientation': 'v',
@@ -100,8 +130,8 @@ class Main extends Component {
                     'src': '/photos/IMG_5772.JPG',
                     'big': '/photos/IMG_5772.JPG',
                     'alt': 'DPO Peinture Inc. - Peinture - Intérieur',
-                    'w': 1200,
-                    'h': 1200,
+                    'w': 600,
+                    'h': 600,
                     'bigw': 1200,
                     'bigh': 1200,
                     'orientation': 'h',
@@ -110,8 +140,8 @@ class Main extends Component {
                     'src': '/photos/IMG_5783.JPEG',
                     'big': '/photos/IMG_5783.JPEG',
                     'alt': 'DPO Peinture Inc. - Peinture - Revêtement - Extérieur',
-                    'w': 2048,
-                    'h': 2048,
+                    'w': 600,
+                    'h': 600,
                     'bigw': 2048,
                     'bigh': 2048,
                     'orientation': 'h',
@@ -120,8 +150,8 @@ class Main extends Component {
                     'src': '/photos/131EBC52-B061-45D1-BA01-AB0AFCEEF7BB.JPEG',
                     'big': '/photos/131EBC52-B061-45D1-BA01-AB0AFCEEF7BB.JPEG',
                     'alt': 'DPO Peinture Inc. - Peinture - Intérieur',
-                    'w': 2048,
-                    'h': 2048,
+                    'w': 600,
+                    'h': 600,
                     'bigw': 2048,
                     'bigh': 2048,
                     'orientation': 'h',
@@ -130,8 +160,8 @@ class Main extends Component {
                     'src': '/photos/IMG_5779.JPEG',
                     'big': '/photos/IMG_5779.JPEG',
                     'alt': 'DPO Peinture Inc. - Peinture - Teinture - Extérieur',
-                    'w': 2048,
-                    'h': 2048,
+                    'w': 600,
+                    'h': 600,
                     'bigw': 2048,
                     'bigh': 2048,
                     'orientation': 'h',
@@ -140,8 +170,8 @@ class Main extends Component {
                     'src': '/photos/EE6EB1FA-61A6-4C14-BA32-A99DC7D94D05.JPEG',
                     'big': '/photos/EE6EB1FA-61A6-4C14-BA32-A99DC7D94D05.JPEG',
                     'alt': 'DPO Peinture Inc. - Peinture - Extérieur',
-                    'w': 2048,
-                    'h': 2048,
+                    'w': 600,
+                    'h': 600,
                     'bigw': 2048,
                     'bigh': 2048,
                     'orientation': 'h',
@@ -150,8 +180,8 @@ class Main extends Component {
                     'src': '/photos/IMG_5773.JPG',
                     'big': '/photos/IMG_5773.JPG',
                     'alt': 'DPO Peinture Inc. - Peinture - Intérieur - Escalier',
-                    'w': 2048,
-                    'h': 2048,
+                    'w': 600,
+                    'h': 600,
                     'bigw': 2048,
                     'bigh': 2048,
                     'orientation': 'h',
@@ -160,8 +190,8 @@ class Main extends Component {
                     'src': '/photos/16F85998-9ADF-450D-A735-2010446F9E2E.JPEG',
                     'big': '/photos/16F85998-9ADF-450D-A735-2010446F9E2E.JPEG',
                     'alt': 'DPO Peinture Inc. - Peinture - Extérieur - Porte de garage',
-                    'w': 2048,
-                    'h': 2048,
+                    'w': 600,
+                    'h': 600,
                     'bigw': 2048,
                     'bigh': 2048,
                     'orientation': 'h',
@@ -170,8 +200,8 @@ class Main extends Component {
                     'src': '/photos/IMG_5774.JPEG',
                     'big': '/photos/IMG_5774.JPEG',
                     'alt': 'DPO Peinture Inc. - Peinture - Intérieur - Armoire de cuisine',
-                    'w': 2048,
-                    'h': 2048,
+                    'w': 600,
+                    'h': 600,
                     'bigw': 2048,
                     'bigh': 2048,
                     'orientation': 'h',
@@ -180,8 +210,8 @@ class Main extends Component {
                     'src': '/photos/IMG_5780-c.jpg',
                     'big': '/photos/IMG_5780.JPEG',
                     'alt': 'DPO Peinture Inc. - Peinture - Intérieur - Commercial',
-                    'w': 1536,
-                    'h': 1536,
+                    'w': 600,
+                    'h': 600,
                     'bigw': 2048,
                     'bigh': 1536,
                     'orientation': 'h',
@@ -190,8 +220,8 @@ class Main extends Component {
                     'src': '/photos/IMG_5775.JPEG',
                     'big': '/photos/IMG_5775.JPEG',
                     'alt': 'DPO Peinture Inc. - Peinture - Intérieur - Brique',
-                    'w': 2048,
-                    'h': 2048,
+                    'w': 600,
+                    'h': 600,
                     'bigw': 2048,
                     'bigh': 2048,
                     'orientation': 'h',
@@ -200,8 +230,8 @@ class Main extends Component {
                     'src': '/photos/8ECEE6A5-F70C-41FC-AFED-D07125FA9512.JPEG',
                     'big': '/photos/8ECEE6A5-F70C-41FC-AFED-D07125FA9512.JPEG',
                     'alt': 'DPO Peinture Inc. - Peinture - Extérieur - Brique',
-                    'w': 2048,
-                    'h': 2048,
+                    'w': 600,
+                    'h': 600,
                     'bigw': 2048,
                     'bigh': 2048,
                     'orientation': 'h',
@@ -210,8 +240,8 @@ class Main extends Component {
                     'src': '/photos/IMG_5679.JPEG',
                     'big': '/photos/IMG_5679.JPEG',
                     'alt': 'DPO Peinture Inc. - Peinture - Extérieur - Brique',
-                    'w': 2048,
-                    'h': 2048,
+                    'w': 600,
+                    'h': 600,
                     'bigw': 2048,
                     'bigh': 2048,
                     'orientation': 'h',
@@ -388,8 +418,8 @@ class Main extends Component {
                                             width={IMG.w}
                                             height={IMG.h}
                                             className="img-fade"
-                                            onLoad={() => {
-                                                gsap.to(`.img-thumbnail-${index2} .img-fade`, {
+                                            onLoad={(e) => {
+                                                gsap.to(e.target, {
                                                     autoAlpha: 1,
                                                     ease:Power3.easeInOut,
                                                     duration: 1,
@@ -402,17 +432,16 @@ class Main extends Component {
                                                 })
                                                 
                                             }}
-                                            onMouseOver={() => {
-                                                gsap.to(`.img-thumbnail-${index2} .img-fade`, {
+                                            onMouseOver={(e) => {
+                                                gsap.to(e.target, {
                                                     alpha: .5,
                                                     ease:Power3.easeOut,
                                                     duration: .25
                                                 })
                                             }}
-                                            onMouseLeave={() => {
-                                                gsap.to(`.img-thumbnail-${index2} .img-fade`, {
+                                            onMouseLeave={(e) => {
+                                                gsap.to(e.target, {
                                                     alpha: 1,
-                                                    /* ease:Power3.easeIn, */
                                                     duration: .15
                                                 })
                                             }}
