@@ -436,13 +436,15 @@ class Main extends Component {
                                                 gsap.to(e.target, {
                                                     alpha: .5,
                                                     ease:Power3.easeOut,
-                                                    duration: .25
+                                                    duration: .25,
+                                                    overwrite: "auto"
                                                 })
                                             }}
                                             onMouseLeave={(e) => {
                                                 gsap.to(e.target, {
                                                     alpha: 1,
-                                                    duration: .15
+                                                    duration: .15,
+                                                    overwrite: "auto"
                                                 })
                                             }}
                                         />
